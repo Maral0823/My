@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Untitled Document</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="navs">
+                <li><a href="about.html">About</a></li>
+                <li><a href="connect.html">Contact</a></li>
+            </ul>
+        </nav>
+         <a href="index-en.html"><img class="logo" src="img/maral.gif" width="15%"></a>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 100;
+                var duration = 500;
+                jQuery(window).scroll(function() {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.pagetop').fadeIn(duration);
+                    } else {
+                        jQuery('.pagetop').fadeOut(duration);
+                    }
+                });
+
+                jQuery('.pagetop').click(function(event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({
+                        scrollTop: 0
+                    }, duration);
+                    return false;
+                })
+            });
+        </script>
+
+    </header>
+    <main>
+        <h1>PINGUIN</h1>
+        <dl class="info">
+            <dt>Type:</dt>
+            <dd>Poster design</dd>
+            <dt>Info:</dt>
+            <dd>We worked as a team with four students on a school assignment.I chose the poster design.i tried to illustrate lonely pinguin,because it's problem of natural.</dd>
+            <dt>Used:</dt>
+            <dd>Adobe illustrate</dd>
+            <dt>Date:</dt>
+            <dd>2019.12.1</dd>
+        </dl>
+        <section class="image-zone">
+            <h2>Before</h2>
+            <img src="img/illustrate/Asset%201.png" width="35%">
+        </section>
+        <section class="image-zone">
+            <h2>After</h2>
+            <img src="img/illustrate/pin.jpg" width="35%">
+        </section>
+    </main>
+    <footer>
+        <div class="sen"></div>
+       <img class="logo-2" src="img/maral.gif" width="100px">
+        <ul>
+            <li>Thanks for joing my portfolio</li>
+            <li>If you want to connect me,you can use my social accounts.</li>
+        </ul>
+
+        <div class="social">
+            <a href="https://www.instagram.com/maralaa_mararu/"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.facebook.com/enhbaatar.maral/"><i class="fab fa-facebook-square" width="30px" height="30px"></i></a>
+            <a href="https://github.com/Maral0823/maral"><i class="fab fa-github"></i></a>
+            <a href="https://www.behance.net/maralenkhbaatar/"><i class="fab fa-behance-square"></i></a>
+        </div>
+
+         <nav class="sendfooter"><a href="contact.html">send me an email</a></nav>
+        <div class="sen-2"></div>
+        <p class="last-sentence">2019 Maral.All Rights Reserved</p>
+    </footer>
+
+    <div class="pagetop">↑</div>
+</body>
+
+</html>
+<style>
+    html {
+        background-image:url(img/lap2.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 100%;
+        height: 100%%;
+
+
+    }
+
+    header {
+        text-align: center;
+        margin: 20px;
+
+    }
+
+    main {}
+
+    .navs {
+        list-style: none;
+        display: flex;
+
+    }
+
+    .navs li {
+        margin: 3%;
+
+    }
+
+    .navs a {
+        color: #d5d5d5;
+        text-decoration: none;
+    }
+
+    .logo {
+        margin-top: -70px;
+    }
+
+    h1 {
+        color: white;
+        text-align: center;
+        font-family: 'Poiret One', cursive;
+        font-weight: 100;
+        margin: 50px;
+    }
+
+    .info {
+        width: 70%;
+
+        margin: 0 15% 0 15%;
+
+    }
+
+    .info dt {
+        font-size: 30px;
+        color: #fffcfc;
+        font-family: 'Poiret One', cursive;
+        text-decoration: underline;
+        text-decoration-color: rgb(107, 163, 107);
+         text-decoration-style: dotted;
+    }
+
+    .info dd {
+        margin: -25px 0 20px 80px;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: inherit;
+    }
+
+    .image-zone {
+        text-align: center;
+        color: white;
+        margin: 10px;
+    }
+
+    .image-zone h2 {
+        font-family: 'Poiret One', cursive;
+        margin: 30px;
+    }
+
+    .image-zone img {
+        animation: drop 3.5s ease;
+    }
+
+    @media (max-width:1100px){
+        .info dd{
+            margin-top: -35px;
+        }
+        footer ul li{
+            font-size: 13px;
+        }
+        .last-sentence{
+            font-size: 10px;
+        }
+        
+    }
+
+    .sen {
+        margin-top: 150px;
+        width: 100%;
+        height: 8px;
+        background-color: #3C3C3C;
+    }
+
+    .sen-2 {
+        width: 100%;
+        height: 1px;
+        background-color: rgba(56, 56, 56, 0.9);
+        margin-top: 20px;
+    }
+
+    .logo-2 {
+        margin: 15px;
+    }
+
+    footer {
+        background-color: antiquewhite;
+        width: 100%;
+        background-color: #464646;
+        text-align: center;
+        color: white;
+    }
+
+    footer li {
+        margin: 15px;
+        font-size: 15px;
+        list-style: none;
+    }
+
+    footer p {
+        margin: 5px;
+        font-size: 13px;
+    }
+
+    footer a {
+        margin: 5px;
+        color: white;
+    }
+
+    @keyframes drop {
+        0% {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .sendfooter{
+    margin:auto;
+    width:130px;
+    height:20px;
+    text-align: center;
+    border:2px solid #333;
+    background:transparent;
+    color:white;
+    cursor:pointer;
+    margin-top:20px;
+        
+}
+.sendfooter a{
+    text-decoration:none;
+}
+.sendfooter:hover{
+    background-color: #333;
+}
+
+
+    .pagetop {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.76);
+        text-decoration: none;
+        display: none;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        line-height: 5.3rem;
+        border-radius: 5.3rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .pagetop:hover {
+        color: #fff !important;
+        background-color: rgba(78, 116, 78, 0.49);
+        text-decoration: none;
+    }
+</style>

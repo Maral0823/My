@@ -1,0 +1,258 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Untitled Document</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="css/reset.css">
+        <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Abel|Antic+Didone|Julius+Sans+One|Noto+Serif+KR|Open+Sans|Open+Sans+Condensed:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+
+    <script>
+    jQuery(document).ready(function() {
+    var offset = 100;
+    var duration = 500;
+    jQuery(window).scroll(function() {
+    if (jQuery(this).scrollTop() > offset) {
+    jQuery('.pagetop').fadeIn(duration);
+    } else {
+    jQuery('.pagetop').fadeOut(duration);
+    }
+    });
+
+    jQuery('.pagetop').click(function(event) {
+    event.preventDefault();
+    jQuery('html, body').animate({scrollTop: 0}, duration);
+    return false;
+    })
+    });
+    </script>
+
+
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul class="navs">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="connect.html">Contact</a></li>
+                    
+                </ul>
+            </nav>
+    <a href="index-en.html"><img class="logo" src="img/maral.gif" width="15%"></a>
+    
+        
+    
+        </header>
+    <main>
+    <section>
+        <h1>Contact me</h1>
+        <p class="description">I'm waiting your mail.</p>
+    </section>
+    
+    <div class="access">
+            <dl class="foot-in">
+                <dt class="left"><i class="fas fa-map-marker-alt"></i></dt>
+                <dd class="left">Yokohama, Japan</dd>
+            </dl>
+            <dl class="foot-in">
+                <dt><i class="fas fa-phone"></i></dt>
+                <dd>+81-090-1507-6550</dd>
+            </dl>
+            <dl class="foot-in">
+                <dt><i class="fas fa-envelope"></i></dt>
+                <dd>maral73.iii@icloud.com</dd>
+            </dl>
+        </div>
+        
+    </main>
+    <footer>
+            <div class="sen"></div>
+            <img class="logo-2" src="img/maral.gif" width="100px">
+            <ul>
+            <li>Thanks for joing my portfolio</li>
+            <li>If you want to connect me,you can use my social accounts.</li>
+            </ul>
+            <div class="social">
+                <a href="https://www.instagram.com/maralaa_mararu/"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/enhbaatar.maral/"><i class="fab fa-facebook-square" width="30px" height="30px"></i></a>
+                <a href="https://github.com/Maral0823/maral"><i class="fab fa-github"></i></a>
+                <a href="https://www.behance.net/maralenkhbaatar/"><i class="fab fa-behance-square"></i></a>
+            </div>
+            <div class="sen-2"></div>
+            <p>2019 Maral.All Rights Reserved</p>
+        </footer>
+
+        
+    <div class="pagetop">↑</div>
+    </body>
+    <style>
+    html{
+            background-image:url(img/背景.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            color:white;
+            text-align: center;
+        }
+        main{
+            animation:drop 3.5s ease;
+        }
+        .logo{
+            margin-top:-70px;
+        }
+        h1{
+            margin-top:300px;
+            font-family: 'Poiret One', cursive;
+        }
+        .description{
+            font-family: 'Poiret One', cursive;
+            font-size: 20px;
+        }
+        .navs{
+            list-style: none;
+            display:flex;
+            
+        }
+        .navs li{
+        margin:3%;
+            
+        }
+        .navs a{
+            color: #d5d5d5;
+            text-decoration: none;
+        }
+        .sen {
+            width: 100%;
+            height: 8px;
+            background-color: #3C3C3C;
+            margin-top:100px;
+        }
+
+        .sen-2 {
+            width: 100%;
+            height: 1px;
+            background-color: rgba(56, 56, 56, 0.9);
+            margin-top: 30px
+        }
+
+        .logo-2 {
+            margin: 15px;
+        }
+        .access{
+            display:flex;
+            
+            align-items: center;
+          justify-content: space-between;
+          
+           
+        }
+        .foot-in dd{
+            margin-top: 100px;
+            margin-right: 40px;
+            margin-top: 60px;
+            font-size:30px;
+        }
+        .foot-in dt i{
+            font-size: 20px;
+        }
+        .left{
+            margin-left: 130px;
+        }
+
+        @media (max-width:1100px) {
+            .access{
+                -webkit-flex-direction: column;
+                flex-direction: column;
+                text-align: center;
+                align-items: center;
+            }
+            .logo{
+                width: 300px;
+                margin-top: 100px;
+            }
+            .foot-in dd{
+                font-size: 30px;
+            }
+            .foot-in dt i{
+                font-size: 30px;
+            }
+            h1{
+                font-size: 50px;
+                
+            }
+            main{
+                margin-bottom: 500px;
+                margin-top:400px;
+            }
+            .left{
+                margin-left:0;
+            }
+        }
+       
+
+    footer {
+        background-color: antiquewhite;
+        width: 100%;
+        background-color: #464646;
+        text-align: center;
+        color: white;
+    }
+    footer li {
+        margin: 15px;
+        font-size: 15px;
+        list-style: none;
+    }
+    footer p {
+        margin: 5px;
+        font-size: 13px;
+    }
+    footer a{
+        margin:5px;
+        color:white;
+    }
+        @keyframes drop{
+    0%{
+    opacity :0;
+    transform:translateY(-400px);
+    }
+    100%{
+    opacity :1;
+    transform:translateY(0px);
+
+            }}
+        .social a:hover {
+        filter: brightness(40%);
+        transition-duration: 0.5s;
+        
+    }
+        
+            .pagetop {
+        color: #fff;
+        background-color: rgba(0, 0, 0, 0.76);
+        text-decoration: none;
+        display: none;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        font-size: 1.5rem;
+        width: 5.5rem;
+        height: 5.5rem;
+        line-height: 5.3rem;
+        border-radius: 5.3rem;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    .pagetop:hover {
+        color: #fff !important;
+        background-color: #d5d5d5;
+        text-decoration: none;
+    }
+
+
+        </style>
+    </html>

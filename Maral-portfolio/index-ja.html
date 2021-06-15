@@ -1,0 +1,113 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title class="title">
+            ポートフォリオ</title>
+        <meta charset="UTF-8">
+        <meta name="description" content="" />
+        <meta name="keywords" content="" />
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+        <script>
+            jQuery(document).ready(function() {
+                var offset = 100;
+                var duration = 500;
+                jQuery(window).scroll(function() {
+                    if (jQuery(this).scrollTop() > offset) {
+                        jQuery('.pagetop').fadeIn(duration);
+                    } else {
+                        jQuery('.pagetop').fadeOut(duration);
+                    }
+                });
+
+                jQuery('.pagetop').click(function(event) {
+                    event.preventDefault();
+                    jQuery('html, body').animate({
+                        scrollTop: 0
+                    }, duration);
+                    return false;
+                })
+            });
+        </script>
+        
+    </head>
+
+    <body>
+        <header>
+            <nav>
+                <ul class="navs">
+                    <li class="about"><a href="about-ja.html">アボウト</a></li>
+                    <li class="connect"><a href="connect-ja.html">コンタクト</a></li>
+
+                </ul>
+            </nav>
+            <script>
+                jQuery(document).ready(function() {
+                    var offset = 100;
+                    var duration = 500;
+                    jQuery(window).scroll(function() {
+                        if (jQuery(this).scrollTop() > offset) {
+                            jQuery('.pagetop').fadeIn(duration);
+                        } else {
+                            jQuery('.pagetop').fadeOut(duration);
+                        }
+                    });
+
+                    jQuery('.pagetop').click(function(event) {
+                        event.preventDefault();
+                        jQuery('html, body').animate({
+                            scrollTop: 0
+                        }, duration);
+                        return false;
+                    })
+                });
+            </script>
+        </header>
+        <main>
+            <article>
+                <section class="head">
+                    <section class="head-1">
+                        <img class="logo" src="img/maral.gif" width="50%">
+
+                        <h1 class="mine">こんにちは!私はエンヘバトル マラルです。</h1>
+                        <ul class="head-in">
+                           
+                            <li class="2">あまり経験がありませんがデザインが大好きです。</li>
+                            <li class="3">今まで自分なりの制作をいくつも作りました。</li>
+                            <li class="4">よろしければ私の作品をご覧くだっさい</li>
+                        </ul>
+                    </section>
+                    <section class="head-2">
+                        <img class="my-photo" src="img/mine.JPG" width="60%">
+                    </section>
+                </section>
+            </article>
+            <article class="items">
+                <a href="illustrate-ja.html"><img class="left" src="img/ill.png" width="70%"></a>
+                <a href="design-ja.html"><img class="right" src="img/des.png" width="70%"></a>
+                <a href="websites-ja.html"><img class="left" src="img/wbsites.png" width="70%"></a>
+                <a href="designworks-ja.html"><img class="right" src="img/dsworks.png" width="70%"></a>
+            </article>
+        </main>
+        <footer>
+            <div class="sen"></div>
+            <img class="logo-2" src="img/maral.gif" width="100px">
+            <ul>
+                <li>私のポートフォリオに参加してくれてありがとうございました</li>
+                <li>下のソーシャルリンクを使用してご連絡お願いします</li>
+            </ul>
+    <div class="social">
+        <a href="https://www.instagram.com/maralaa_mararu/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/enhbaatar.maral/"><i class="fab fa-facebook-square" width="30px" height="30px"></i></a>
+        <a href="https://github.com/Maral0823/maral"><i class="fab fa-github"></i></a>
+        <a href="https://www.behance.net/maralenkhbaatar/"><i class="fab fa-behance-square"></i></a>
+    </div>
+            <nav class="sendfooter"><a href="contact.html">メール送信</a></nav>
+            <div class="sen-2"></div>
+            <p>2019 Maral.All Rights Reserved</p>
+        </footer>
+    <div class="pagetop">↑</div>
+</body>
+</html>
